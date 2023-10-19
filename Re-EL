@@ -1,1 +1,74 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Re-EL | Branding Agency</title>
+  <style>
+    body {
+      background-color: navy;
+      color: yellow;
+      font-family: Arial, sans-serif;
+    }
 
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      margin: 20px auto;
+      max-width: 600px;
+      padding: 20px;
+      background-color: yellow;
+      color: navy;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: none;
+    }
+
+    input[type="submit"] {
+      background-color: navy;
+      color: yellow;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Re-EL Branding Agency</h1>
+
+    <form action="quotation.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required>
+
+      <label for="project">Project Description:</label>
+      <textarea id="project" name="project" rows="4" required></textarea>
+
+      <input type="submit" value="Get Quotation">
+    </form>
+  </div>
+</body>
+</html>
+```
